@@ -1,0 +1,19 @@
+---
+title: "Tokyo housing"
+author: "James Gleeson"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+library(tidyverse)
+library(readxl)
+```
+
+## Tokyo housing analysis
+
+Our data is in an Excel workbook that I have already saved in the 'data' folder. Let's get a list of the sheet names.
+
+```{r get list of excel sheets}
+excel_sheets("data/Summary workbook.xlsx")
+```
